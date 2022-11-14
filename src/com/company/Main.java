@@ -24,5 +24,6 @@ public class Main {
         else{
             System.out.println("il mostro vincitore è "+mostro1.getNome());
         }
+        
     }
 }
