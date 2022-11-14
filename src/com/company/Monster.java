@@ -5,6 +5,12 @@ public class Monster {
     private int puntiFerita;
     private int danno;
 
+    public Monster(String nome, int puntiFerita, int danno) {
+        this.nome = nome;
+        this.puntiFerita = puntiFerita;
+        this.danno = danno;
+    }
+
     public int attacca(){
         return danno;
     }
