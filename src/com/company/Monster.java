@@ -12,4 +12,12 @@ public class Monster {
     public void subisci(int dannoSubito){
         puntiFerita-=dannoSubito;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getPuntiFerita() {
+        return puntiFerita;
+    }
 }
