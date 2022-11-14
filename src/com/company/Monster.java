@@ -8,4 +8,8 @@ public class Monster {
     public int attacca(){
         return danno;
     }
+
+    public void subisci(int dannoSubito){
+        puntiFerita-=dannoSubito;
+    }
 }
