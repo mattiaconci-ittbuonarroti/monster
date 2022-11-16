@@ -4,6 +4,11 @@ public class Weapon {
     private int dannoArma;
     private String nomeArma;
 
+    public Weapon(int dannoArma, String nomeArma) {
+        this.dannoArma = dannoArma;
+        this.nomeArma = nomeArma;
+    }
+
     public int getDannoArma() {
         return dannoArma;
     }
