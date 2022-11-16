@@ -4,11 +4,13 @@ public class Monster {
     private String nome;
     private int puntiFerita;
     private int danno;
+    private Weapon arma;
 
-    public Monster(String nome, int puntiFerita, int danno) {
+    public Monster(String nome, int puntiFerita, int danno, Weapon arma) {
         this.nome = nome;
         this.puntiFerita = puntiFerita;
         this.danno = danno;
+        this.arma=arma;
     }
 
     public int attacca(){
