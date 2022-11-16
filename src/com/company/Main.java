@@ -28,7 +28,7 @@ public class Main {
         if(mostro1.getPuntiFerita()==0){
             System.out.println(mostro1.getNome()+" è esausto...");
             System.out.println("il mostro vincitore è "+mostro2.getNome());
-            System.out.println("hai vinto"+denaro+"$");
+            System.out.println("hai vinto "+denaro+"$");
         }
         else{
             System.out.println(mostro2.getNome()+" è esausto...");
