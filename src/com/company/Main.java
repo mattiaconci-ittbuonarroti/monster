@@ -33,7 +33,7 @@ public class Main {
         else{
             System.out.println(mostro2.getNome()+" è esausto...");
             System.out.println("il mostro vincitore è "+mostro1.getNome());
-            System.out.println("hai vinto"+denaro+"$");
+            System.out.println("hai vinto "+denaro+"$");
         }
         
     }
