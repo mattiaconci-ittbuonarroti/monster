@@ -18,11 +18,11 @@ public class Main {
             mossa=rand.nextInt(4);
             if(turno){
                 mostro1.subisci(mostro2.attacca());
-                System.out.println(" "+mostro2.getNome()+"usa "+mosse[mossa]+" su"+mostro1.getNome());
+                System.out.println(mostro2.getNome()+" usa "+mosse[mossa]+" su "+mostro1.getNome());
             }
             else{
                 mostro2.subisci(mostro1.attacca());
-                System.out.println(" "+mostro2.getNome()+"utilizza "+mosse[mossa]+" su"+mostro1.getNome());
+                System.out.println(mostro2.getNome()+" usa "+mosse[mossa]+" su "+mostro1.getNome());
             }
         }
         if(mostro1.getPuntiFerita()==0){
