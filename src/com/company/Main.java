@@ -19,7 +19,7 @@ public class Main {
         armaCasuale=rand.nextInt(5);
         Monster mostro1= new Monster("Cavaliere errante",10000,50, armi[armaCasuale]);
         System.out.println(mostro1.getNome()+" ha ottenuto"+armi[armaCasuale].getNomeArma());
-        Monster mostro2= new Monster("Malenia, Lama di Miquella",75000,100,armaDelBoss);
+        Monster mostro2= new Monster("Malenia, Lama di Miquella",100000,150,armaDelBoss);
         while(mostro1.getPuntiFerita()>0||mostro2.getPuntiFerita()>0){
             turno=rand.nextBoolean();
             if(turno){
