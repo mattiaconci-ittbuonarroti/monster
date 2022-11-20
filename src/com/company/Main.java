@@ -14,33 +14,29 @@ public class Main {
         Weapon armaDelBoss=new Weapon(350,"MANO DI MALENIA");
         String[] mosse=new String[]{"fuocobomba","eterelama","abisso","giudizio"};
         Weapon[] armi = new Weapon[]{arma1,arma2,arma3,arma4,arma5};
-        int mossa=0;
-        int denaro=0;
+        int armaCasuale=0;
         Random rand=new Random();
-        denaro= rand.nextInt(10000);
-        Monster mostro1= new Monster("Cavaliere errante",1000,50);
-        Monster mostro2= new Monster("Malenia, Lama di Miquella",500,100);
+        armaCasuale=rand.nextInt(5);
+        Monster mostro1= new Monster("Cavaliere errante",1000,50, armi[armaCasuale]);
+        Monster mostro2= new Monster("Malenia, Lama di Miquella",500,100,armaDelBoss);
         while(mostro1.getPuntiFerita()>0||mostro2.getPuntiFerita()>0){
             turno= rand.nextBoolean();
-            mossa=rand.nextInt(4);
             if(turno){
-                mostro1.subisci(mostro2.attacca());
-                System.out.println(mostro2.getNome()+" usa "+mosse[mossa]+" su "+mostro1.getNome());
+                //mostro1.subisci(mostro2.attacca());
+                //System.out.println(mostro2.getNome()+" usa "+mosse[mossa]+" su "+mostro1.getNome());
             }
             else{
-                mostro2.subisci(mostro1.attacca());
-                System.out.println(mostro2.getNome()+" usa "+mosse[mossa]+" su "+mostro1.getNome());
+                //mostro2.subisci(mostro1.attacca());
+                //System.out.println(mostro2.getNome()+" usa "+mosse[mossa]+" su "+mostro1.getNome());
             }
         }
         if(mostro1.getPuntiFerita()==0){
-            System.out.println(mostro1.getNome()+" è esausto...");
+            System.out.println(mostro1.getNome()+" ha perso...");
             System.out.println("il mostro vincitore è "+mostro2.getNome());
-            System.out.println("hai vinto "+denaro+"$");
         }
         else{
-            System.out.println(mostro2.getNome()+" è esausto...");
+            System.out.println(mostro2.getNome()+" ha perso...");
             System.out.println("il mostro vincitore è "+mostro1.getNome());
-            System.out.println("hai vinto "+denaro+"$");
         }
         
     }
