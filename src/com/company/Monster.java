@@ -50,4 +50,9 @@ public class Monster{
     public void setArma(Weapon arma) {
         this.arma = arma;
     }
+
+    public void perdiArma(){
+        arma.setDannoArma(0);
+        arma.setNomeArma("pugno");
+    }
 }
