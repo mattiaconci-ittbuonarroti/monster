@@ -49,6 +49,5 @@ public class Main {
             System.out.println(mostro2.getNome()+" ha perso...");
             System.out.println("il mostro vincitore è "+mostro1.getNome());
         }
-        
     }
 }
