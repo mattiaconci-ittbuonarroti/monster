@@ -46,4 +46,8 @@ public class Monster{
     public Weapon getArma() {
         return arma;
     }
+
+    public void setArma(Weapon arma) {
+        this.arma = arma;
+    }
 }
