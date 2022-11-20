@@ -22,10 +22,10 @@ public class Main {
         Monster mostro2= new Monster("Malenia, Lama di Miquella",50000,75,armaDelBoss);
         while(mostro1.getPuntiFerita()>0||mostro2.getPuntiFerita()>0){
             turno=rand.nextBoolean();
-            possibilità=rand.nextInt(4);
             if(turno){
                 mostro1.subisci(mostro2.attaccaConArma());
                 System.out.println(mostro2.getNome()+" attacca "+mostro1.getNome()+" con "+mostro2.getArma().getNomeArma()+" infliggendo "+(mostro2.getArma().getDannoArma()+mostro2.getDanno())+ " danni");
+                possibilità=rand.nextInt(4);
                 if(possibilità>=2){
                     System.out.println(mostro1.getNome()+"ha perso la sua arma!");
                     if(possibilità>=3){
