@@ -27,8 +27,8 @@ public class Main {
                 System.out.println(mostro2.getNome()+" attacca "+mostro1.getNome()+" con "+mostro2.getArma().getNomeArma()+" infliggendo "+(mostro2.getArma().getDannoArma()+mostro2.getDanno())+ " danni");
                 possibilità=rand.nextInt(4);
                 if(possibilità>=2){
-                    mostro1.perdiArma();
-                    System.out.println(mostro1.getNome()+"ha perso la sua arma!");
+                    mostro1.perdiArma(new Weapon(0,"pugno"));
+                    System.out.println(mostro1.getNome()+" ha perso la sua arma!");
                     if(possibilità>=3){
                         armaCasuale=rand.nextInt(5);
                         mostro1.setArma(armi[armaCasuale]);
