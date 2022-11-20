@@ -17,7 +17,7 @@ public class Main {
         int possibilità;
         Random rand=new Random();
         armaCasuale=rand.nextInt(5);
-        Monster mostro1= new Monster("Cavaliere errante",10000,50, armi[armaCasuale]);
+        Monster mostro1= new Monster("Cavaliere errante",7500,50, armi[armaCasuale]);
         System.out.println(mostro1.getNome()+" ha ottenuto"+armi[armaCasuale].getNomeArma());
         Monster mostro2= new Monster("Malenia, Lama di Miquella",100000,150,armaDelBoss);
         while(mostro1.getPuntiFerita()>0||mostro2.getPuntiFerita()>0){
