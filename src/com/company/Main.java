@@ -8,7 +8,7 @@ public class Main {
         Weapon arma1=new Weapon(400,"SPADONE DEICIDA");
         Weapon arma2=new Weapon(350,"DARDO DI GRANSAX");
         Weapon arma3=new Weapon(225,"SPADA DELLA NOTTE ARDENTE");
-        Weapon arma4=new Weapon(275,"SPADONE DEL FLAGELLO CELESTE ");
+        Weapon arma4=new Weapon(275,"SPADONE DEL FLAGELLO CELESTE");
         Weapon arma5=new Weapon(375,"FIUMI DI SANGUE");
         Weapon armaDelBoss=new Weapon(325,"MANO DI MALENIA");
         //String[] mosse=new String[]{"fuocobomba","eterelama","abisso","giudizio"};
@@ -16,9 +16,9 @@ public class Main {
         int armaCasuale=0;
         Random rand=new Random();
         armaCasuale=rand.nextInt(5);
-        Monster mostro1= new Monster("Cavaliere errante",100000,50, armi[armaCasuale]);
+        Monster mostro1= new Monster("Cavaliere errante",10000,50, armi[armaCasuale]);
         System.out.println(mostro1.getNome()+" ha ottenuto"+armi[armaCasuale].getNomeArma());
-        Monster mostro2= new Monster("Malenia, Lama di Miquella",500000,75,armaDelBoss);
+        Monster mostro2= new Monster("Malenia, Lama di Miquella",50000,75,armaDelBoss);
         while(mostro1.getPuntiFerita()>0||mostro2.getPuntiFerita()>0){
             turno= rand.nextBoolean();
             if(turno){
