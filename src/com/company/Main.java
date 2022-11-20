@@ -10,7 +10,7 @@ public class Main {
         Weapon arma3=new Weapon(225,"SPADA DELLA NOTTE ARDENTE");
         Weapon arma4=new Weapon(275,"SPADONE DEL FLAGELLO CELESTE");
         Weapon arma5=new Weapon(375,"FIUMI DI SANGUE");
-        Weapon armaDelBoss=new Weapon(325,"MANO DI MALENIA");
+        Weapon armaDelBoss=new Weapon(400,"MANO DI MALENIA");
         //String[] mosse=new String[]{"fuocobomba","eterelama","abisso","giudizio"};
         Weapon[] armi = new Weapon[]{arma1,arma2,arma3,arma4,arma5};
         int armaCasuale=0;
