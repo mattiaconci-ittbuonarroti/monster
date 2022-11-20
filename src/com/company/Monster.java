@@ -1,6 +1,6 @@
 package com.company;
 
-public class Monster {
+public class Monster{
     private String nome;
     private int puntiFerita;
     private int danno;
@@ -12,6 +12,13 @@ public class Monster {
         this.danno = danno;
         this.arma=arma;
     }
+    public Monster(String nome, int puntiFerita, int danno) {
+        this.nome = nome;
+        this.puntiFerita = puntiFerita;
+        this.danno = danno;
+        arma=new Weapon(0,"mano");
+    }
+
 
     public int attacca(){
         return danno;
