@@ -10,7 +10,7 @@ public class Main {
         Weapon arma3=new Weapon(225,"SPADA DELLA NOTTE ARDENTE");
         Weapon arma4=new Weapon(275,"SPADONE DEL FLAGELLO CELESTE");
         Weapon arma5=new Weapon(375,"FIUMI DI SANGUE");
-        Weapon armaDelBoss=new Weapon(325,"MANO DI MALENIA");
+        Weapon armaDelBoss=new Weapon(300,"MANO DI MALENIA");
         //String[] mosse=new String[]{"fuocobomba","eterelama","abisso","giudizio"};
         Weapon[] armi = new Weapon[]{arma1,arma2,arma3,arma4,arma5};
         int armaCasuale=0;
@@ -24,7 +24,7 @@ public class Main {
             turno=rand.nextBoolean();
             if(turno){
                 mostro2.subisci(mostro1.attaccaConArma());
-                System.out.println(mostro2.getNome()+" attacca "+mostro2.getNome()+" con "+mostro1.getArma().getNomeArma()+" infliggendo "+(mostro1.getArma().getDannoArma()+mostro1.getDanno())+ " danni");
+                System.out.println(mostro1.getNome()+" attacca "+mostro2.getNome()+" con "+mostro1.getArma().getNomeArma()+" infliggendo "+(mostro1.getArma().getDannoArma()+mostro1.getDanno())+ " danni");
                 possibilità=rand.nextInt(4);
                 if(possibilità>=2){
                     mostro1.perdiArma(new Weapon(0,"pugno"));
