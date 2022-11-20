@@ -41,7 +41,7 @@ public class Main {
                 System.out.println(mostro1.getNome()+" attacca "+mostro2.getNome()+" con "+mostro1.getArma().getNomeArma()+" infliggendo "+(mostro1.getArma().getDannoArma()+mostro1.getDanno())+ " danni");
             }
         }
-        if(mostro1.getPuntiFerita()==0){
+        if(mostro1.getPuntiFerita()<mostro2.getPuntiFerita()){
             System.out.println(mostro1.getNome()+" ha perso...");
             System.out.println("il mostro vincitore è "+mostro2.getNome());
         }
