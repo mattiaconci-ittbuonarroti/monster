@@ -19,9 +19,12 @@ public class Monster{
         arma=new Weapon(0,"mano");
     }
 
-
     public int attacca(){
         return danno;
+    }
+
+    public int attaccaConArma(){
+        return danno+arma.getDannoArma();
     }
 
     public void subisci(int dannoSubito){
@@ -34,5 +37,9 @@ public class Monster{
 
     public int getPuntiFerita() {
         return puntiFerita;
+    }
+
+    public Weapon getArma() {
+        return arma;
     }
 }
