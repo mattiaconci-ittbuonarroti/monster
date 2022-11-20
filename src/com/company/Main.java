@@ -23,11 +23,11 @@ public class Main {
             turno= rand.nextBoolean();
             if(turno){
                 mostro1.subisci(mostro2.attaccaConArma());
-                System.out.println(mostro2.getNome()+" attacca "+mostro1.getNome()+" con "+mostro2.getArma().getNomeArma());
+                System.out.println(mostro2.getNome()+" attacca "+mostro1.getNome()+" con "+mostro2.getArma().getNomeArma()+" infliggendo "+(mostro2.getArma().getDannoArma()+mostro2.getDanno())+ " danni");
             }
             else{
-                //mostro2.subisci(mostro1.attacca());
-                //System.out.println(mostro2.getNome()+" usa "+mosse[mossa]+" su "+mostro1.getNome());
+                mostro2.subisci(mostro1.attaccaConArma());
+                System.out.println(mostro1.getNome()+" attacca "+mostro2.getNome()+" con "+mostro1.getArma().getNomeArma()+" infliggendo "+(mostro1.getArma().getDannoArma()+mostro1.getDanno())+ " danni");
             }
         }
         if(mostro1.getPuntiFerita()==0){

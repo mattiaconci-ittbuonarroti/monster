@@ -39,6 +39,10 @@ public class Monster{
         return puntiFerita;
     }
 
+    public int getDanno() {
+        return danno;
+    }
+
     public Weapon getArma() {
         return arma;
     }
