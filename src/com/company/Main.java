@@ -20,13 +20,13 @@ public class Main {
         Monster mostro1= new Monster("Cavaliere errante",10000,50, armi[armaCasuale]);
         System.out.println(mostro1.getNome()+" ha ottenuto"+armi[armaCasuale].getNomeArma());
         Monster mostro2= new Monster("Malenia, Lama di Miquella",25000,100,armaDelBoss);
-        while(mostro1.getPuntiFerita()>0||mostro2.getPuntiFerita()>0){
+        while(mostro1.getPuntiFerita()>0 && mostro2.getPuntiFerita()>0){
             turno=rand.nextBoolean();
             if(turno){
                 mostro2.subisci(mostro1.attaccaConArma());
                 System.out.println(mostro1.getNome()+" attacca "+mostro2.getNome()+" con "+mostro1.getArma().getNomeArma()+" infliggendo "+(mostro1.getArma().getDannoArma()+mostro1.getDanno())+ " danni");
                 possibilità=rand.nextInt(4);
-                if(possibilità>=2){
+                if(possibilità>=2 && mostro1.getPuntiFerita()>0){
                     mostro1.perdiArma(new Weapon(0,"pugno"));
                     System.out.println(mostro1.getNome()+" ha perso la sua arma!");
                     if(possibilità>=3){
