@@ -14,7 +14,7 @@ public class Main {
         //String[] mosse=new String[]{"fuocobomba","eterelama","abisso","giudizio"};
         Weapon[] armi = new Weapon[]{arma1,arma2,arma3,arma4,arma5};
         int armaCasuale=0;
-        int possibilità;
+        int possibilita;
         Random rand=new Random();
         armaCasuale=rand.nextInt(5);
         Monster mostro1= new Monster("Cavaliere errante",12500,50, armi[armaCasuale]);
@@ -25,11 +25,11 @@ public class Main {
             if(turno){
                 mostro2.subisci(mostro1.attaccaConArma());
                 System.out.println(mostro1.getNome()+" attacca "+mostro2.getNome()+" con "+mostro1.getArma().getNomeArma()+" infliggendo "+(mostro1.getArma().getDannoArma()+mostro1.getDanno())+ " danni");
-                possibilità=rand.nextInt(4);
-                if(possibilità>=2 && mostro1.getPuntiFerita()>0){
+                possibilita=rand.nextInt(4);
+                if(possibilita>=2 && mostro1.getPuntiFerita()>0 && mostro1.getArma().getNomeArma().equals("mano")){
                     mostro1.perdiArma(new Weapon(0,"pugno"));
                     System.out.println(mostro1.getNome()+" ha perso la sua arma!");
-                    if(possibilità>=3){
+                    if(possibilita>=3){
                         armaCasuale=rand.nextInt(5);
                         mostro1.setArma(armi[armaCasuale]);
                         System.out.println(mostro1.getNome()+" ha trovato "+armi[armaCasuale].getNomeArma()+"! Che fortuna!");
